@@ -1,0 +1,214 @@
+body{
+    font-size: 12px;
+    font-family: "微软雅黑";
+}
+body,ul{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    list-style: none;
+}
+header{
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(86,73,56,0.8);
+    position: fixed;     /*固定头部导航*/
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+.headerCont{
+    width: 1260px;
+    height: 50px;
+    /*border: 1px solid red;*/
+    margin: auto;
+}
+.logo{
+    /*border: 1px solid yellow;*/
+    float: left;
+}
+.logo img{
+    height: 50px;
+    float: left;
+}
+.headerCont ul{
+    float: left;
+    margin-left: 100px;
+    /*border: 1px solid #000;*/
+}
+.headerCont ul li{
+    height: 50px;
+    width: 100px;
+    text-align: center;  
+    float: left;
+    /*border: 1px solid yellow;*/
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+.headerCont ul li:hover{
+    overflow: visible;
+}
+
+.headerCont ul li a{
+    color: rgb(255,255,255); 
+    text-decoration: none;
+    /*border: 1px solid red;*/
+    display: inline-block;
+    width: 100px;
+}
+
+.headerCont ul li:hover a{
+    color: rgba(255,255,255,0.5);
+}
+
+.headerCont ul li div{
+    background: rgba(86,73,56,0.8); 
+    /*border: 1px solid #000;*/
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(255,255,255); 
+}
+.headerCont ul li div:hover{
+    color: #00c3b6;	
+    background-color: rgba(86,73,56,0.7);
+    cursor:pointer;
+}
+
+.reglogin{
+     width: 150px;
+     height: 50px;
+     line-height: 50px;
+     float:right;
+     font-size: 0px;
+    /* border: 1px solid deepskyblue;*/
+     /*background-color: deepskyblue;*/
+}
+.reglogin img{
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.reglogin .loginBtn, .reglogin .regBtn{
+    border: none;
+    width: 54px;
+    height: 32px;
+    color: rgba(255,255,255,0.8);
+    cursor:pointer;
+    vertical-align: middle;
+    background-color: rgba(255,255,255,0.2);
+}
+.loginBtn{
+    margin-right: 1px;
+    border-radius: 5px 0px 0px 5px;
+}
+.regBtn{
+    border-radius: 0px 5px 5px 0px;
+}
+
+/*banner start*/
+.bannerWarp{
+    width: 100%;
+    height: 250px;
+    color:  white;
+    overflow: hidden;
+    background-image: url("images/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center 0px;
+    position: relative;       /*增加了一个相对定位*/
+    
+    
+}
+/*banner end*/
+
+
+
+.bannerWarp h2{
+    margin-top: 100px;
+    text-align: center;
+    
+}
+
+.bannerWarp p{
+    width: 170px;
+    height: 25px;
+    line-height:25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.15);
+    
+}
+
+section{
+    width: 1260px;
+    height: 250px;
+    /*border: 1px solid #000;*/
+    margin: 10px auto;
+    position: relative; /*解决文字穿图问题*/
+}
+.slideWrap{
+    width: 620px;
+    height: 250px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    /*border: 1px solid #000;*/
+}
+
+.adOne{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-left: 20px;
+    /*border: 1px solid #000;*/
+}
+.adTwo{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin-left: 20px;
+    /*border: 1px solid #000;*/
+}
+
+.slideWrap span{
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    background: black;
+}
+
+.leftArrow{
+    left:-30px;
+    top: 100px;
+    transition: left linear 0.3s;
+}
+.rightArrow{
+    right:-30px;
+    top: 100px;
+    transition: right linear 0.3s;
+}
+
+.slideWrap:hover .leftArrow{
+    left: 0px;
+    transition: left linear 0.3s;
+}
+
+.slideWrap:hover .rightArrow{
+    right: 0px;
+    transition: right linear 0.3s;
+}
+
+/*解决banner广告文字不动*/
+.BannerText{
+    width: 100%;
+    position: fixed;
+    /*display: inline-table;*/
+}
